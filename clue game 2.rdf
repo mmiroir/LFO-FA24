@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14/"
+     xml:base="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-14="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#does -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#does">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#does_not -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#does_not">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#is -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#is">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#hobby -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#hobby"/>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#murderer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#murderer">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#is"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#suspect"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#music -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#music">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#trumpet"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#violin"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#hobby"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#not_music -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#not_music">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#daydream"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#problemsolves"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#read"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#hobby"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#suspect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#suspect">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#barry"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#mark"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#neil"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#werner"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#barry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#barry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#suspect"/>
+        <untitled-ontology-14:does rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#daydream"/>
+        <untitled-ontology-14:does rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#problemsolves"/>
+        <untitled-ontology-14:does rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#read"/>
+        <untitled-ontology-14:does_not rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#trumpet"/>
+        <untitled-ontology-14:does_not rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#violin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#daydream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#daydream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#not_music"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#mark -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#mark">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#suspect"/>
+        <untitled-ontology-14:does rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#violin"/>
+        <untitled-ontology-14:does_not rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#problemsolves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#murderer_x -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#murderer_x">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#murderer"/>
+        <untitled-ontology-14:does rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#daydream"/>
+        <untitled-ontology-14:does rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#problemsolves"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#neil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#neil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#suspect"/>
+        <untitled-ontology-14:does_not rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#read"/>
+        <untitled-ontology-14:does_not rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#trumpet"/>
+        <untitled-ontology-14:does_not rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#violin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#problemsolves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#problemsolves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#not_music"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#read -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#read">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#not_music"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#trumpet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#trumpet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#music"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#violin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#violin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#music"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#werner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#werner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#suspect"/>
+        <untitled-ontology-14:does rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#problemsolves"/>
+        <untitled-ontology-14:does rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#trumpet"/>
+        <untitled-ontology-14:does_not rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-14#daydream"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

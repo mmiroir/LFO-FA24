@@ -1,0 +1,560 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8/"
+     xml:base="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-8="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#drinks -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#drinks">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#houses -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#houses">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#lives_in"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#immediately_to_the_left_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#immediately_to_the_left_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#next_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#immediately_to_the_right_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#immediately_to_the_right_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#next_to"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#is_drunk_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#is_drunk_in">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#is_owned_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#is_owned_by">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#owns"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#is_smoked_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#is_smoked_in"/>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#lives_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#lives_in"/>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#next_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#next_to"/>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#owns -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#owns">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#smoked_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#smoked_by">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#smokes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#smokes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#smokes"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#cigs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#cigs">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#chesterfields"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#kools"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#lucky_strikes"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#old_gold"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#parliaments"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#drink -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#drink">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#coffee"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#milk"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#orange_juice"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#tea"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#house -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#house">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#blue"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#green"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#ivory"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#red"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#yellow"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#person">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#englishman"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#japanese"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#norwegian"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#spaniard"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#ukrainian"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#pet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#pet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#dog"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#fox"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#horse"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#snails"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#position -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#position">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#first"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#middle"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#blue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#blue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#house"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#chesterfields -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#chesterfields">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#cigs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#coffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#coffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#drink"/>
+        <untitled-ontology-8:is_drunk_in rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#green"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#dog -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#dog">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#pet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#englishman -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#englishman">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#person"/>
+        <untitled-ontology-8:lives_in rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#red"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#first -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#first">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#fox -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#fox">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#pet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#green -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#green">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#house"/>
+        <untitled-ontology-8:immediately_to_the_right_of rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#ivory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#horse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#horse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#pet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#ivory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#ivory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#house"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#japanese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#japanese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#person"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#kools -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#kools">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#cigs"/>
+        <untitled-ontology-8:is_smoked_in rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#yellow"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#lucky_strikes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#lucky_strikes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#cigs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#middle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#middle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#position"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#milk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#milk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#drink"/>
+        <untitled-ontology-8:is_drunk_in rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#middle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#norwegian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#norwegian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#person"/>
+        <untitled-ontology-8:lives_in rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#first"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#old_gold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#old_gold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#cigs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#orange_juice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#orange_juice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#drink"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#parliaments -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#parliaments">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#cigs"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#person_x -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#person_x">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#person"/>
+        <untitled-ontology-8:owns rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#snails"/>
+        <untitled-ontology-8:smokes rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#old_gold"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#red -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#red">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#house"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#snails -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#snails">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#pet"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#spaniard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#spaniard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#person"/>
+        <untitled-ontology-8:owns rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#dog"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#tea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#drink"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#ukrainian -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#ukrainian">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#person"/>
+        <untitled-ontology-8:drinks rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#tea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#yellow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#yellow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/miroi/ontologies/2024/8/untitled-ontology-8#house"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
